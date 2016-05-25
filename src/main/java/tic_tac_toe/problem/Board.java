@@ -88,26 +88,22 @@ public class Board {
 		for (int i = 0; i < this.board.length; ++i) {
 			// all values in a row
 			if (this.checkWinner(this.board[i][0], this.board[i][1], this.board[i][2])) {
-				// System.out.println("Player with " + this.board[i][0] + " has won!!!");
 				return true;
 			}
 
 			// all values in a column
 			if (this.checkWinner(this.board[0][i], this.board[1][i], this.board[2][i])) {
-				// System.out.println("Player with " + this.board[0][i] + " has won!!!");
 				return true;
 			}
 		}
 
 		// diagonal
 		if (this.checkWinner(this.board[0][0], this.board[1][1], this.board[2][2])) {
-			// System.out.println("Player with " + this.board[0][0] + " has won!!!");
 			return true;
 		}
 
 		// other diagonal
 		if (this.checkWinner(this.board[0][2], this.board[1][1], this.board[2][0])) {
-			// System.out.println("Player with " + this.board[2][0] + " has won!!!");
 			return true;
 		}
 		return false;

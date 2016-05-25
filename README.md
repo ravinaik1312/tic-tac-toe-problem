@@ -18,7 +18,7 @@ To get started, clone this repository
 git clone git@github.com:ravinaik1312/tic-tac-toe-problem.git
 ```
 
-Since, this is a maven project, you will need to install [Java](https://java.com/en/download/help/mac_install.xml), [Maven](https://maven.apache.org/install.html) on your machine. If you are on MAC OS and you use external third party package manager, you can install it from command line using 
+Since, this is a maven project, you will need to install [Java](https://java.com/en/download/help/mac_install.xml), [Maven](https://maven.apache.org/install.html) on your machine. If you are on MAC OS and you use external third party package manager like Homebrew, you can install it from command line using 
 
 ```bash
 brew install maven
@@ -31,4 +31,4 @@ mvn package
 java -cp target/problem-0.0.1-SNAPSHOT.jar tic_tac_toe.problem.App
 ```
 
-'mvn package' will download and install the maven compiler plugin and compile the project. 
+'mvn package' will download and install the maven compiler plugin and compile the project and create a snaphost for the project. 

@@ -29,5 +29,6 @@ public class HumanPlayer extends Player {
 				System.out.println("Invalid Move, try again...");
 			}
 		} while (!isValid);
+
 	}
 }
